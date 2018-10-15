@@ -2,23 +2,83 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1">
-    <title>ANL|ABOUT US</title>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_about.css">
     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="style.css">	
+    <title>Adeporsche</title>
+    <link rel="icon" type="image/ico" href="anl_logo2.png" />
+
   </head>
   <body>
-<div class="wrapper">
-  <!-- Navigation -->
-  <nav class="main-nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light top_nav" role="navigation">
+      <div class="container n1">
+      <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu"> -->
+         <!-- <span class="navbar-toggler-icon nav-ic"></span> </button> -->
+      <div class="navbar left_side" id="navMenu">
+        <ul class="navbar-nav ml-right wow fadeInUp" data-wow-delay="2.2s">
+          <li class="nav-item"><a href="#" class="nav-link nav_phone"><i class="fas fa-phone"></i>+2348134410426</a></li>
+          <li class="nav-item"><a href="#" class="nav-link nav_mail"><i class="fas fa-envelope"></i>info@adeporsche.com</a></li>
+          </ul>
+         </div>
+      </div>
+      <div class="container n2">
+        <div class="collapse navbar-collapse right_side" id="navMenu1">
+          <ul class="navbar-nav ml-auto tr">
+            <li class="nav-item wow bounceInLeft" data-wow-delay="1.8s"><a href="#" class="nav-link"><i class="fab fa-twitter ic_social" id="twitter"></i></a></li>
+            <li class="nav-item wow bounceInLeft" data-wow-delay="1.4s"><a href="#" class="nav-link"><i class="fab fa-facebook-f ic_social" id="facebook"></i></a></li>
+            <li class="nav-item wow bounceInLeft" data-wow-delay="0.8s"><a href="#" class="nav-link"><i class="fab fa-google-plus-g ic_social" id="google"></i></a></li>
+            <li class="nav-item wow bounceInLeft" data-wow-delay="0.4s"><a href="#" class="nav-link"><i class="fab fa-linkedin-in ic_social" id="linkedin"></i></a></li>
+            </ul>
+           </div>
+      </div>
+    </nav>
 
-  </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-primary bg-light nav_letters" role="navigation">
+        <div class="container">
+          <div class="nav-brand"> <a href="index.html"><img class="logo" src="anl_logo2.png" alt=""></a></div>
+          <button type="button" name="button" class="navbar-toggler left-navbar-toggler navbar-light" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon nav-ic"> <a href="#"></a></span> </button>
+          <div class="collapse navbar-collapse" data-hover="dropdown" id="navMenu">
+            <ul class="navbar-nav nav_item">
+              <li class="nav-item nav-item-li"><a href="index.html" class="nav-link">HOME</a></li>
+              <li class="nav-item nav-item-li"><a href="about.html" class="nav-link">ABOUT US</a></li>
+              <li class="nav-item nav-item-li dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">SERVICES</a>
+                <ul class="dropdown-menu">
+                     <li class="drp1"><a href="#" class="nav-link">Web Development</a></li>
+                     <li class="drp"> <a href="#" class="nav-link">Responsive Website Design</a></li>
+                     <li class="drp"> <a href="#" class="nav-link">Mobile App Development</a></li>
+                     <li class="drp"> <a href="#" class="nav-link">Application Maintenance Service</a></li>
+                     <li class="drp"> <a href="#" class="nav-link">Software Training</a></li>
+                     <li class="drp"> <a href="#" class="nav-link">SEO Services</a></li>
+                </ul>
+                </li>
+              <li class="nav-item nav-item-li"><a href="" class="nav-link">PRODUCTS</a></li>
+              <li class="nav-item  nav-item-li dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">TESTIMONIAL</a>
+                  <ul class="dropdown-menu">
+                    <li class="portfolio"> <a href="#" class="nav-link">Portfolio</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item nav-item-li"> <a class="nav-link" href="contact.html">CONTACT US</a> </li>
+              <li class="nav-item dropdown"><a href="" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search" id="search"></i></a>
+                   <ul class="dropdown-menu dropdown-menu-left">
+                      <li class="drp_search"> <input type="search" name="" value="" placeholder="SEARCH"> </li>
+
+                   </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </nav>
+<div class="wrapper">
   <!-- Top Container -->
   <section class="top-container">
     <header class="showcase">
@@ -42,28 +102,28 @@
   <!-- Boxes section -->
   <section class="boxes">
   <div class="box">
-    <i class="fas fa-chart-pie fa-4x"></i>
+    <i class="fas fa-chart-pie fa-4x fas_icon"></i>
     <h3>Analytics</h3>
     <p>Lorem ipsum dolor sit amet consectetur adispiscing elit. Modi, ipsan
     Nihil quo minima nulla atque!</p>
   </div>
 
   <div class="box">
-    <i class="fas fa-globe fa-4x"></i>
+    <i class="fas fa-globe fa-4x fas_icon"></i>
     <h3>Marketing</h3>
     <p>Lorem ipsum dolor sit amet consectetur adispiscing elit. Modi, ipsan
     Nihil quo minima nulla atque!</p>
   </div>
 
   <div class="box">
-    <i class="fas fa-cog fa-4x"></i>
+    <i class="fas fa-cog fa-4x fas_icon"></i>
     <h3>Development</h3>
     <p>Lorem ipsum dolor sit amet consectetur adispiscing elit. Modi, ipsan
     Nihil quo minima nulla atque!</p>
   </div>
 
   <div class="box">
-    <i class="fas fa-users fa-4x"></i>
+    <i class="fas fa-users fa-4x fas_icon"></i>
     <h3>Support</h3>
     <p>Lorem ipsum dolor sit amet consectetur adispiscing elit. Modi, ipsan
     Nihil quo minima nulla atque!</p>
@@ -107,10 +167,93 @@
   </section>
 
 <!-- Footer -->
-<footer>
-<p>ANLTech &copy; 2018</p>
-</footer>
 </div>
+<h2 id="footer_home" class="wow fadeInRight" data-wow-delay="0.4s">Home</h2>
+<div class="footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-3 col-sm-12 col-md-12 wow fadeInLeft" data-wow-delay="1.8s">
+        <h5>Our Partner</h5>
+        <div class="partners">
+      <span class="ms_logo"> <img src="microsoft.png" alt=""></span>
+      <span><h6>Microsoft Global Support for Young Programmers in Africa.</h6></span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-12 col-md-12 wow fadeInLeft" data-wow-delay="1.4s">
+        <h5>Video</h5>
+        <div class="video">
+          <video width="250" height="160" controls>
+ <source src="Nav_bootstrap.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+</video>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12 col-md-12 wow fadeInLeft" data-wow-delay="0.8s">
+         <form class="news_letter">
+           <h5>NewsLetter</h5>
+           <div class="subscribe">
+              <h5 id="subscribe">Subscribe with Newsletter</h5>
+              <p><input class="text_input" type="text" placeholder="First name" required></p>
+              <p><input class="text_input" type="text" placeholder="Your email address" required></p>
+              <input class="btn btn-block btn-danger text-input" type="submit" name="" value="Subscribe">
+              <!-- <button  class="btn btn-block btn-danger" type="button" name="button">Subscribe</button> -->
+           </div>
+         </form>
+      </div>
+      <div class="col-lg-3 col-sm-12 col-md-12 wow fadeInLeft" data-wow-delay="0.4s">
+        <div class="contact">
+          <h5>Contact Us</h5>
+         <div class="address">
+          <span class="ic"><i class="fas fa-map-marker-alt"></i></span>
+          <p>Suite 36, NO. 70D Allen Avenue, Ikeja lagos state,  Nigeria.</p>
+        </div>
+        <div class="clearfix"> </div>
+        <div class="phone">
+          <span class="ic"><i class="fas fa-phone"></i></span>
+          <p>+2348134410426</p>
+        </div>
+          <div class="clearfix"> </div>
+        <div class="mail">
+          <span class="ic"><i class="fas fa-envelope-open"></i></span>
+          <p>info@adeporsche.com</p>
+        </div>
+          <div class="clearfix"> </div>
+          <div class="follow_us">
+            <h5>Follow Us</h5>
+            <span> <a href="#"><i class="fab fa-twitter ic_social_footer" id="twitterr"></i></a> </span>
+            <span> <a href="#"> <i class="fab fa-facebook-f ic_social_footer" id="facebookk"></i></a></span>
+            <span> <a href="#"> <i class="fab fa-google-plus-g ic_social_footer" id="gpluss"></i></a></span>
+            <span> <a href="#"> <i class="fab fa-linkedin-in ic_social_footer" id="linkednn"></i></a></span>
+          </div>
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+  <div class="footer_bottom">
+    <p>Adeporsche Technology-All Rights Reserved</p>
+  </div>
+
+  <div class="mail1">
+      <i class="fas fa-envelope-open mailing"></i>
+  </div>
+
 <!-- wrapper ends -->
+
+<script src="wow.min.js"></script>
+  <script>
+      new WOW().init();
+      </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   </body>
 </html>

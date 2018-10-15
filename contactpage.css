@@ -1,0 +1,19 @@
+.standard{
+  background-color: #20a8a3;
+  color:white;
+}
+.nit{
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:20px;
+
+}
+#l4,#l5,#l6{
+color:black;
+}
+.right{
+  padding:20px 40px 10px 40px;
+}
+.left{
+  padding-top:20px;
+}
