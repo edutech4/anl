@@ -17,7 +17,6 @@
   /* padding-left:20px;
   padding-right:20px; */
 }
-
 /* .useful li a{
   text-decoration:none !important;
   text-align:left;
@@ -26,8 +25,6 @@
   color:green;
 
 } */
-
-
 .logo{
   /* position:absolute; */
   width:70px;
@@ -184,7 +181,7 @@ padding:0px;
   /* border-radius:4px; */
 }
 .col-lg-3{
-  text-align: left;
+  text-align: center;
   width:100%;
   margin-left: auto;
   margin-right: auto;
@@ -194,7 +191,7 @@ padding:0px;
   margin-bottom:20px;
 }
 
-.footer h5{
+.footer #cap{
   margin:0px;
   padding-top:50px;
   padding-bottom:15px;
@@ -260,7 +257,7 @@ background-color:#4875b4;
   padding-top:13px 0 0 0;
   color:#b2b5ba;
   width:100%;
-  height:120px;
+  height:50px;
   background-color:#1f2023;
   border-top:1px dotted #74767a;
 }
@@ -348,6 +345,15 @@ margin-left:3px;
   background-color:#edeff2;
 
 }
+/* Editing a part of the footer */
+.Useful_links a{
+  color:#b2b5ba;
+  text-decoration:none;
+}
+.Useful_links a:hover{
+  color:#d2d4d8;
+}
+
 #search{
   padding-left:25px;
   padding-right:0px;
@@ -423,7 +429,7 @@ padding:6px;
     padding-left:0;
 }
 .footer{
-  height:420px;
+  height:380px;
   width:100%;
   padding:0px;
   background-color:#2f3135;
@@ -498,7 +504,7 @@ padding:6px;
 
   @media screen and (max-width: 988px) {
   .footer{
-    height:1050px;
+    height:1090px;
     width:100%;
     /* background-color:#20a8a3 !important; */
      color:white;
@@ -515,7 +521,7 @@ padding:6px;
        padding:20px;
      }
      .footer_bottom p{
-       height:80px;
+       height:50px;
      }
      .cont_slide{
        width:100%;
@@ -538,7 +544,7 @@ padding:6px;
        padding-bottom:10px;
        background-color:#e3e5e8;
      }
-     .footer h5{
+     .footer #cap{
        margin:0px;
        padding-top:20px;
        padding-bottom:10px;
@@ -549,7 +555,7 @@ padding:6px;
        padding:10px !important;
      }
      .follow_us{
-       padding: 10px !important;
+       padding: 5px !important;
      }
      .address p,.phone p,.mail p{
        text-align: left !important;
@@ -595,6 +601,75 @@ padding:6px;
    }
 
 }
-#useful_links a:hover{
-  color:red !important;
+
+/* The new slide styling */
+.header{
+   background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img3.jpg);
+   background-size:cover;
+   background-position: center;
+   height:500px;
+}
+.header2{
+   background-image:url(marketing.png);
+   background-size:cover;
+   background-position: center;
+   height:500px;
+}
+.header3{
+   background-image:url(web_services.jpg);
+   background-size:cover;
+   background-position: center;
+   height:500px;
+}
+.header h1{
+  color:#fff;
+  text-align:center;
+  font-size:70px;
+  margin-top:200px;
+  margin-left:0;
+  font-family: 'Roboto', sans-serif;
+}
+.header h2{
+  color:#fff;
+  text-align:center;
+  font-size:40px;
+  margin-top:200px;
+  margin-left:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header h3{
+  text-align:center;
+  color:#fff;
+  margin-left:15px;
+}
+.header span{
+  font-size: 20px;
+  position:relative;
+  top:-10px;
+}
+.flex-container{
+  display:flex !important;
+  border:1px solid transparent !important;
+  height:100px;
+  justify-content:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-grp{
+  text-align:center;
+  justify-content:center;
+  align-self:center;
+}
+.flex_1{
+  margin-right:5px;
+  border-radius:0;
+  border:0;
+  background-color:#d34747;
+}
+.flex_2{
+  margin-left:5px;
+  border:0;
+  border-radius:0;
+  background-color:#36a73a;
 }
