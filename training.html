@@ -14,9 +14,76 @@
   <link rel="icon" type="image/ico" href="anl_logo2.png" />
 </head>
   <body>
- <h1>WEB DEVELOPMENT TRAINING</h1>
+    <!-- The nav bar starts here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light top_nav" role="navigation">
+      <div class="container n1">
+      <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu"> -->
+         <!-- <span class="navbar-toggler-icon nav-ic"></span> </button> -->
+      <div class="navbar left_side" id="navMenu">
+        <ul class="navbar-nav ml-right wow fadeInUp" data-wow-delay="2.2s">
+          <li class="nav-item"><a href="#" class="nav-link nav_phone"><i class="fas fa-phone"></i>+2348134410426</a></li>
+          <li class="nav-item"><a href="#" class="nav-link nav_mail"><i class="fas fa-envelope"></i>info@adeporsche.com</a></li>
+          </ul>
+         </div>
+      </div>
+      <div class="container n2">
+        <div class="collapse navbar-collapse right_side" id="navMenu1">
+          <ul class="navbar-nav ml-auto tr">
+            <li class="nav-item wow bounceInLeft" data-wow-delay="1.8s"><a href="#" class="nav-link"><i class="fab fa-twitter ic_social" id="twitter"></i></a></li>
+            <li class="nav-item wow bounceInLeft" data-wow-delay="1.4s"><a href="#" class="nav-link"><i class="fab fa-facebook-f ic_social" id="facebook"></i></a></li>
+            <li class="nav-item wow bounceInLeft" data-wow-delay="0.8s"><a href="#" class="nav-link"><i class="fab fa-google-plus-g ic_social" id="google"></i></a></li>
+            <li class="nav-item wow bounceInLeft" data-wow-delay="0.4s"><a href="#" class="nav-link"><i class="fab fa-linkedin-in ic_social" id="linkedin"></i></a></li>
+            </ul>
+           </div>
+      </div>
+    </nav>
+
+
+  <nav class="navbar navbar-expand-lg navbar-primary bg-light nav_letters" role="navigation">
+    <div class="container">
+      <div class="nav-brand"> <a href="home.html"><img class="logo" src="anl_logo2.png" alt=""></a></div>
+      <button type="button" name="button" class="navbar-toggler left-navbar-toggler navbar-light" data-toggle="collapse" data-target="#navMenu">
+        <span class="navbar-toggler-icon nav-ic"> <a href="#"></a></span> </button>
+      <div class="collapse navbar-collapse" data-hover="dropdown" id="navMenu">
+        <ul class="navbar-nav nav_item">
+          <li class="nav-item nav-item-li"><a href="index.html" class="nav-link">HOME</a></li>
+          <li class="nav-item nav-item-li"><a href="about.html" class="nav-link">ABOUT US</a></li>
+          <li class="nav-item nav-item-li dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">SERVICES</a>
+            <ul class="dropdown-menu">
+                 <li class="drp1"><a href="#" class="nav-link">Web Development</a></li>
+                 <li class="drp"> <a href="#" class="nav-link">Responsive Website Design</a></li>
+                 <li class="drp"> <a href="#" class="nav-link">Mobile App Development</a></li>
+                 <li class="drp"> <a href="#" class="nav-link">Application Maintenance Service</a></li>
+                 <li class="drp"> <a href="#" class="nav-link">Software Training</a></li>
+                 <li class="drp"> <a href="#" class="nav-link">SEO Services</a></li>
+            </ul>
+            </li>
+          <li class="nav-item nav-item-li"><a href="#" class="nav-link">PRODUCTS</a></li>
+          <li class="nav-item  nav-item-li dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">TESTIMONIAL</a>
+              <ul class="dropdown-menu">
+                <li class="portfolio"> <a href="#" class="nav-link">Portfolio</a></li>
+              </ul>
+          </li>
+          <li class="nav-item nav-item-li"> <a class="nav-link" href="contact.html">CONTACT US</a> </li>
+          <li class="nav-item dropdown"><a href="" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search" id="search"></i></a>
+               <ul class="dropdown-menu dropdown-menu-left">
+                  <li class="drp_search"> <input type="search" name="" value="" placeholder="SEARCH"> </li>
+
+               </ul>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- the nav bar ends here -->
  <div class="row">
  <div class="col-md-6">
+   <div class="container">
+      <h2>WEB DEVELOPMENT TRAINING</h2>
     <div class="jumbotron">
      <h2>Register Now</h2>
      <form>
@@ -34,26 +101,66 @@
       <label for="email">Email</label>
       <input type="email" class="form-control" id="email" placeholder="user@gmail.com" required>
     </div>
-    <div class="form-group">
+    <div class="form-row">
+    <div class="form-group col-md-6">
       <label for="number">Phone Number</label>
       <input type="tel" class="form-control" id="number" placeholder="phone number " required>
     </div>
+    <div class="form-group col-md-6">
+  <label for="sex">Sex</label>
+   <select id="sex" class="form-control">
+    <option selected>Male</option>
+    <option>Female</option>
+   </select>
+   </div>
+  </div>
     <div class="form-group">
       <label for="address">Resident Address</label>
       <input type="text" class="form-control" id="number" placeholder="Residents Address" required>
     </div>
     <div class="form-row">
     <div class="form-group col-md-6">
-  <label for="inputState">State</label>
-   <select id="inputState" class="form-control">
-    <option selected>Choose...</option>
-    <option>Enugu</option>
-    <option>Anambra</option>
-    <option>Lagos</option>
-    <option>Ogun</option>
-    <option>Osun</option>
-    <option>Ekiti</option>
-   </select>
+  <label for="states_of_nigeria">State</label>
+  <select class="form-control" name="states_of_nigeria" id="states_of_nigeria">
+<option>Outside Nigeria</option>
+<option>ABUJA FCT</option>
+<option>ABIA</option>
+<option>ADAMAWA</option>
+<option>AKWA IBOM</option>
+<option>ANAMBRA</option>
+<option>BAUCHI</option>
+<option>BAYELSA</option>
+<option>BENUE</option>
+<option>BORNO</option>
+<option>CROSS RIVER</option>
+<option>DELTA</option>
+<option>EBONYI</option>
+<option>EDO</option>
+<option>EKITI</option>
+<option>ENUGU</option>
+<option>GOMBE</option>
+<option>IMO</option>
+<option>JIGAWA</option>
+<option>KADUNA</option>
+<option>KANO</option>
+<option>KATSINA</option>
+<option>KEBBI</option>
+<option>KOGI</option>
+<option>KWARA</option>
+<option>LAGOS</option>
+<option>NASSARAWA</option>
+<option>NIGER</option>
+<option>OGUN</option>
+<option>ONDO</option>
+<option>OSUN</option>
+<option>OYO</option>
+<option>PLATEAU</option>
+<option>RIVERS</option>
+<option>SOKOTO</option>
+<option>TARABA</option>
+<option>YOBE</option>
+<option>ZAMFARA</option>
+</select>
    </div>
    <div class="form-group col-md-6">
  <label for="inputState">How did you hear About Us</label>
@@ -78,72 +185,219 @@
     <button type="submit" class="btn btn-primary">Register Now</button>
   </form>
     </div>
- </div>
+  </div>
+</div>
     <div class="col-md-6 courses">
-      <h1 id="about_training">About The Training</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h4 id="about_training">Technology to be taught</h4>
-      <div class="row">
-        <div class="col-md-3">
-          <img src="intel_logo.png" alt="">
+      <div class="container">
+      <h2 id="about_training">About The Training</h2>
+    <p>ANL with the mission to build and train more programmers in Africa, thereby creating Jobs for Africa.We Train students with the neccessary Skill required to fit into the huge job opportunities in the in this time and age. ANL is organizing a free Website Development training using technologies like HTML, CSS, Javascript, Jquery, Nodejs etc. The training is free for all students including the Softwares and tools that will be used throughout the training.
+     </p>
+     <p>Students are meant to transport themselves to the training center.</p>
+    <h4 id="about_training">Technology to be taught</h4>
+      <div class="row" style="display:inline;">
+        <div class="col-md-3" style="display:inline;">
+          <img src="html.png" alt="">
             <small>HTML</small>
         </div>
-        <div class="col-md-3">
-          <img src="nasa_logo.png" alt="">
+        <div class="col-md-3" style="display:inline;">
+          <img src="css.png" alt="">
           <small>CSS</small>
         </div>
-        <div class="col-md-3">
-          <img src="mastercard.jpg" alt="">
-            <small>JAVASCRIPT</small>
+        <div class="col-md-3" style="display:inline;">
+          <img src="javascript.png" alt="">
+            <small>Javascript</small>
         </div>
-        <div class="col-md-3">
-          <img src="microsoft.png" alt="">
-            <small>NodeJs</small>
+        <div class="col-md-3" style="display:inline;">
+          <img src="jquery.png" alt="">
+            <small>Jquery</small>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3">
-          <img src="intel_logo.png" alt="">
-            <small>HTML</small>
+          <img src="nodejs.png" alt="">
+            <small>Nodejs</small>
         </div>
         <div class="col-md-3">
-          <img src="nasa_logo.png" alt="">
-          <small>CSS</small>
+          <img src="bootstrap.png" alt="">
+          <small>Bootstrap</small>
         </div>
         <div class="col-md-3">
-          <img src="mastercard.jpg" alt="">
-            <small>JAVASCRIPT</small>
+          <img src="mysql.png" alt="">
+            <small>Mysql</small>
         </div>
         <div class="col-md-3">
-          <img src="microsoft.png" alt="">
-            <small>NodeJs</small>
+          <img src="photoshop.png" alt="">
+            <small>Photoshop</small>
         </div>
       </div>
-        <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="python.png" alt="">
+            <small>Python</small>
+        </div>
+        <div class="col-md-3">
+          <img src="php.png" alt="">
+          <small>PHP</small>
+        </div>
+        <div class="col-md-3">
+          <img src="Django.png" alt="">
+            <small>Django</small>
+        </div>
+        <div class="col-md-3">
+          <img src="mongodb.png" alt="">
+            <small>MongoDB</small>
+        </div>
+      </div>
+        <div class="col-md-12" style="background-color:#20a8a3;padding-bottom:2px;border-radius:10px;">
             <div class="col-md-12">
+            <p></p>
             <h4 id="about_training">TIMETABLE</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+             <p></p>
+             <p><strong>WEEKDAYS:</strong> Monday-Friday.</p>
+              <p></p>
+             <p><strong>TIME:</strong> 8:30am  to  4:00pm daily.</p>
+             <p></p>
+             <p><strong>NOTE:</strong></p>
+            <p>Public Holidays are exempted from the days of Training.</p>
+             <p></p>
+            <p>No Training holds during the weekend.</p>
+            <p></p>
+            <p></p>
            </div>
         </div>
     </div>
+  </div>
       <!-- the end of left_section -->
      </div>
     </div>
   </div>
   <div class="row">
   <div class="col-md-12">
-    <h1 id="about_training" style="margin-bottom:200px;">Training Venue</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-
+    <div class="container">
+    <h2 id="about_training">Training Venue</h2>
+    <div class="contact">
+      <h5 id="cap">Office Address</h5>
+     <div class="address">
+      <span class="ic"><i class="fas fa-map-marker-alt"></i></span>
+      <p style="color:Black">Suite 36, NO. 70D Allen Avenue, Ikeja lagos state,  Nigeria.</p>
+    </div>
+    <div class="clearfix"> </div>
+    <div class="phone">
+      <span class="ic"><i class="fas fa-phone"></i></span>
+      <p style="color:Black">+2348134410426</p>
+    </div>
+      <div class="clearfix"> </div>
+    <div class="mail">
+      <span class="ic"><i class="fas fa-envelope-open"></i></span>
+      <p style="color:Black">info@adeporsche.com</p>
+    </div>
+      <div class="clearfix"> </div>
+      </div>
+ </div>
+</div>
   </div>
   <div class="row">
   <div class="col-md-12">
-    <h1 id="about_training" style="margin-bottom:200px;">Requirment</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="container">
+      <h2 id="about_training" style="margin-bottom:20px;">Requirement</h2>
+      <h4>Skill Requirement Web Design & Development</h4>
+      <p>No previous web design technology skill set is required for this training but all student are expected to have good computer usage skill.The student should be able to work with microsoft word Comfortably.</p>
+      <h4>Hardware Requirement</h4>
+      <p>All student are expected to come for the training with a laptop that has wireless connectivity ability. Internet connection will be provided by Adeporsche Nigeria Limited</p>
+      <h4>Software Requirement</h4>
+      <p>All software needed for the training will be provided by Adeporsch Nigeria Limited.</p>
+     </div>
+  </div>
   </div>
 
+
+  <!-- the footer starts here -->
+  <div class="footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-12 wow fadeInLeft" data-wow-delay="1.8s">
+          <h5 id="cap">Useful Links</h5>
+          <div class="Useful_links">
+           <div class="li1">
+            <p style="text-align:left;"><a href="training.html">Register for Training</a></p>
+           </div>
+           <div class="clearfix"> </div>
+           <div class="li2">
+             <p style="text-align:left;"><a href="contact.html">Do you have an idea?</a></p>
+           </div>
+             <div class="clearfix"> </div>
+             <div class="li3">
+             <p style="text-align:left;"><a href="contact.html">Enquiry</a></p>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="li4">
+              <p style="text-align:left;"><a href="#">Terms and Condition</a></p>
+            </div>
+              <div class="clearfix"> </div>
+        <!-- <span class="ms_logo"> <img src="microsoft.png" alt=""></span> -->
+        <!-- <span><h6>Microsoft Global Support for Young Programmers in Africa.</h6></span> -->
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-12 col-md-12 wow fadeInLeft" data-wow-delay="1.4s">
+          <h5 id="cap">Video</h5>
+          <div class="video">
+            <video width="250" height="160" controls>
+   <source src="Nav_bootstrap.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+  </video>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-12 wow fadeInLeft" data-wow-delay="0.8s">
+           <form class="news_letter">
+             <h5 id="cap">NewsLetter</h5>
+             <div class="subscribe">
+                <h5 id="subscribe">Subscribe with Newsletter</h5>
+                <p><input class="text_input" type="text" placeholder="First name" required></p>
+                <p><input class="text_input" type="text" placeholder="Your email address" required></p>
+                <input class="btn btn-block btn-danger text-input" type="submit" name="" value="Subscribe">
+                <!-- <button  class="btn btn-block btn-danger" type="button" name="button">Subscribe</button> -->
+             </div>
+           </form>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-12 wow fadeInLeft" data-wow-delay="0.4s">
+          <div class="contact">
+            <h5 id="cap">Contact Us</h5>
+           <div class="address">
+            <span class="ic"><i class="fas fa-map-marker-alt"></i></span>
+            <p>Suite 36, NO. 70D Allen Avenue, Ikeja lagos state,  Nigeria.</p>
+          </div>
+          <div class="clearfix"> </div>
+          <div class="phone">
+            <span class="ic"><i class="fas fa-phone"></i></span>
+            <p>+2348134410426</p>
+          </div>
+            <div class="clearfix"> </div>
+          <div class="mail">
+            <span class="ic"><i class="fas fa-envelope-open"></i></span>
+            <p>info@adeporsche.com</p>
+          </div>
+            <div class="clearfix"> </div>
+            <div class="follow_us">
+              <h5>Follow Us</h5>
+              <span> <a href="#"><i class="fab fa-twitter ic_social_footer" id="twitterr"></i></a> </span>
+              <span> <a href="#"> <i class="fab fa-facebook-f ic_social_footer" id="facebookk"></i></a></span>
+              <span> <a href="#"> <i class="fab fa-google-plus-g ic_social_footer" id="gpluss"></i></a></span>
+              <span> <a href="#"> <i class="fab fa-linkedin-in ic_social_footer" id="linkednn"></i></a></span>
+            </div>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+    <div class="footer_bottom">
+      <p>Adeporsche Technology-All Rights Reserved</p>
+    </div>
+<!-- the footer ends here -->
     <script src="wow.min.js"></script>
       <script>
           new WOW().init();
